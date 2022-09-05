@@ -1,17 +1,21 @@
 import React, { useState } from 'react'
-import Intro from "./components/Intro";
 import Navbar from './components/Navbar';
-import Technologies from "./components/Technologies";
+import Home from './components/Home';
+import triangle from './assets/purple-triangle.png'
+import Resume from './components/Resume';
+
 
 function App() {
   return (
     <>
+    <div className="custom-shape-divider-top-1662389431 -z-10">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>
     <Navbar />
-    <div className='flex m-16 items-end space-x-4'>
-      
-      <Intro/>
-      <Technologies />
-    </div>
+    <Home />
+    <Resume />
     </>
     
   );

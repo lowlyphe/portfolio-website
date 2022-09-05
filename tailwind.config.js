@@ -16,7 +16,8 @@ module.exports = {
         node: '#43853d',
         tailwind: '#0ea5e9',
         psql: '#336791',
-        js: '#f7df1e'
+        js: '#f7df1e',
+        purple: '#9600ff'
       },
       fontFamily: {
         'sans': "Outfit"

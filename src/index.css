@@ -5,6 +5,25 @@ body {
   background-color: black;
 }
 
+.custom-shape-divider-top-1662389431 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1662389431 svg {
+  position: relative;
+  display: block;
+  width: calc(200% + 1.3px);
+  height: 379px;
+}
+
+.custom-shape-divider-top-1662389431 .shape-fill {
+  fill: #9600FF;
+}
 
 @tailwind base;
 @tailwind components;
