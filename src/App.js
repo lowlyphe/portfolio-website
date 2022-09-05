@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import triangle from './assets/purple-triangle.png'
-import Resume from './components/Resume';
+
 
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
         </div>
     <Navbar />
     <Home />
-    <Resume />
+    
     </>
     
   );
