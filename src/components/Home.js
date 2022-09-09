@@ -7,7 +7,7 @@ export default function () {
   return (
     <div className='w-full h-full p-16 '>
         
-      <div className='flex items-end space-x-4'>
+      <div className='flex flex-col md:flex-row items-end space-x-4'>
         <Intro/>
         <Technologies />
       </div>
