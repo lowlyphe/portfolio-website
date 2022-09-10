@@ -2,6 +2,7 @@ import React from 'react'
 import Intro from "./Intro";
 import Technologies from "./Technologies";
 import Project from './Project';
+import Contact from './Contact'
 
 export default function () {
   return (
@@ -11,9 +12,10 @@ export default function () {
         <Intro/>
         <Technologies />
       </div>
-      <div className='my-16 text-3xl mx-auto'>
+      <div className='my-16 text-3xl mx-auto0'>
         <Project />
       </div>
+      <Contact />
       
     </div>
   )

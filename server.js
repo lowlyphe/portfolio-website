@@ -12,22 +12,36 @@ app.use(cors());
 app.use(express.json());
 app.use("/", router);
 
-
-
 const contactEmail = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: GMAIL_USERNAME,
-      pass: GMAIL_PASS,
-    },
-  });
+  service: 'gmail',
+  auth: {
+    user: GMAIL_USERNAME,
+    pass: GMAIL_PASS,
+  },
+});
 
-  contactEmail.verify((error) => {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log("Ready to Send");
-    }
-  });
+contactEmail.verify((error) => {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log("Ready to Send");
+  }
+});
+
+
+app.post('/api/contact', (req,res) => {
+  console.log(req.body)
+  let { name, email, message } = req.body
+  let payload = {
+    from: email,
+    to: GMAIL_USERNAME,
+    subject: `Website contact request from ${name}`,
+    text: message,
+  };
+  contactEmail.sendMail(payload)
+  res.status(200).header('text/plain').send('email sent')
+})
+
+
 
   app.listen(PORT, () => console.log("Server Running"));

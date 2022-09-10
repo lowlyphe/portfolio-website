@@ -10,8 +10,8 @@ export default function Project() {
     <div>
         <h2 className='text-white mb-10'>Featured Projects</h2>
 
-        <div className='flex flex-col md:grid grid-cols-3 min-w-2/3'>
-            <div className='flip-card w-64 text-white text-sm p-2'>
+        <div className='flex flex-col md:grid grid-cols-3 min-w-1/3 w-2/3'>
+            <div className='flip-card text-white text-sm p-2'>
               <div className='flip-card-inner'>
                 <div className='flip-card-front'>
                   <img src={airbnb} className='w-full h-full' alt='airbnb' />
@@ -27,7 +27,7 @@ export default function Project() {
               </div>
             </div>              
 
-            <div className='flip-card w-64 text-white text-sm p-2'>
+            <div className='flip-card text-white text-sm p-2'>
               <div className='flip-card-inner'>
                 <div className='flip-card-front'>
                   <img src={kanban} className='w-full h-full' alt='airbnb' />
@@ -42,7 +42,7 @@ export default function Project() {
               </div>
             </div>
 
-            <div className='flip-card w-64 text-white text-sm p-2'>
+            <div className='flip-card text-white text-sm p-2'>
               <div className='flip-card-inner'>
                 <div className='flip-card-front'>
                   <img src={n64} className='w-full h-full' alt='airbnb' />
@@ -58,7 +58,7 @@ export default function Project() {
               </div>
             </div>
 
-            <div className='flip-card w-64 text-white text-sm p-2'>
+            <div className='flip-card text-white text-sm p-2'>
               <div className='flip-card-inner'>
                 <div className='flip-card-front'>
                   <img src={entertainment} className='w-full h-full' alt='airbnb' />
@@ -74,7 +74,7 @@ export default function Project() {
               </div>
             </div>
 
-            <div className='flip-card w-64 text-white text-sm p-2'>
+            <div className='flip-card text-white text-sm p-2'>
               <div className='flip-card-inner'>
                 <div className='flip-card-front'>
                   <img src={spacewalk} className='w-full h-full' alt='airbnb' />
