@@ -8,16 +8,10 @@ dotenv.config();
 const { PORT, GMAIL_USERNAME, GMAIL_PASS } = process.env
 
 const app = express();
-const path = require('path');
-app.use(express.static(path.join(__dirname, 'build')));
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  next();
-  });
+
 
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
@@ -47,10 +41,6 @@ app.post('/api/contact', (req,res) => {
   };
   contactEmail.sendMail(payload)
   res.status(200).header('text/plain').send('email sent')
-});
-
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 
