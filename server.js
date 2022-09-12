@@ -47,7 +47,7 @@ app.post('/api/contact', (req,res) => {
   res.status(200).send('email sent')
 });
 
-app.get('/*', function (req, res) {
+app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
