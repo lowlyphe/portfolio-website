@@ -8,10 +8,6 @@ export default function Contact() {
     const nameRef = useRef();
     const emailRef = useRef();
     const messageRef = useRef()
-  
-    useEffect(() => {
-      axios.get(`${API_URL}/api/test`).then(res => console.log(res))
-    })
 
   const handleSubmit = (e) => {
     e.preventDefault()
