@@ -12,6 +12,12 @@ app.use(cors());
 app.use(express.json());
 app.use("/", router);
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "https://kyle-jones.dev");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
@@ -40,7 +46,7 @@ app.post('/api/contact', (req,res) => {
     text: `From: ${email} Message: ${message}`,
   };
   contactEmail.sendMail(payload)
-  res.set('Access-Control-Allow-Origin', '*').status(200).header('text/plain').send('email sent')
+  res.status(200).header('text/plain').send('email sent')
 });
 
 
