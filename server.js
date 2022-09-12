@@ -1,5 +1,5 @@
 const express = require('express');
-//const router = express.Router();
+const router = express.Router();
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const dotenv = require('dotenv');
@@ -17,7 +17,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-//app.use("/", router);
+app.use("/", router);
 
 
 
