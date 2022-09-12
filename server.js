@@ -13,6 +13,11 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();
+  });
 
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
