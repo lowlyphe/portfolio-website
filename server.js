@@ -41,7 +41,7 @@ app.post('/api/contact', (req,res) => {
     text: `From: ${email} Message: ${message}`,
   };
   contactEmail.sendMail(payload)
-  res.status(200).header({'Access-Control-Allow-Origin': '*'}).send('email sent')
+  res.status(200).header('Access-Control-Allow-Origin', '*').send('email sent')
 });
 
 
