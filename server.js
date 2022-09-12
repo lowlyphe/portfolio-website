@@ -12,11 +12,6 @@ app.use(cors());
 app.use(express.json());
 app.use("/", router);
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
 
 
 const contactEmail = nodemailer.createTransport({
@@ -46,7 +41,7 @@ app.post('/api/contact', (req,res) => {
     text: `From: ${email} Message: ${message}`,
   };
   contactEmail.sendMail(payload)
-  res.status(200).send('email sent')
+  res.status(200).header({'Access-Control-Allow-Origin': '*'}).send('email sent')
 });
 
 
