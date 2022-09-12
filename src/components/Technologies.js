@@ -1,6 +1,5 @@
 import React from 'react'
-import Typist from "react-typist";
-import cell from '../assets/cell-phone.svg'
+
 
 export default function Technologies() {
   return (
