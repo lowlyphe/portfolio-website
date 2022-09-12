@@ -1,8 +1,6 @@
 import React, { useState, useRef } from "react";
 import axios from 'axios'
 
-const API_URL = process.env.REACT_APP_API_URL
-
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
     const nameRef = useRef();
@@ -13,7 +11,7 @@ export default function Contact() {
     setTimeout(() => {
       setSubmitted(true);
     }, 100);
-    axios.post(`${API_URL}/api/contact`, {
+    axios.post(`/api/contact`, {
         name: nameRef.current.value,
         email: emailRef.current.value,
         message: messageRef.current.value
