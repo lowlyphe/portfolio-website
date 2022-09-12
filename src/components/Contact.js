@@ -12,7 +12,7 @@ export default function Contact() {
     setTimeout(() => {
       setSubmitted(true);
     }, 100);
-    axios.post('http://localhost:3000/api/contact', {
+    axios.post('/api/contact', {
         name: nameRef.current.value,
         email: emailRef.current.value,
         message: messageRef.current.value
