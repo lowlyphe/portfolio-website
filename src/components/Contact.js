@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import axios from 'axios'
 
-const FORM_ENDPOINT = ""; // TODO - fill on the later step
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -16,7 +15,7 @@ export default function Contact() {
     axios.post('http://localhost:3000/api/contact', {
         name: nameRef.current.value,
         email: emailRef.current.value,
-        mesage: messageRef.current.value
+        message: messageRef.current.value
     })
 
   };
@@ -32,7 +31,6 @@ export default function Contact() {
 
   return (
     <form
-      action={FORM_ENDPOINT}
       onSubmit={handleSubmit}
       method="POST"
       target="_blank"
@@ -43,7 +41,7 @@ export default function Contact() {
           placeholder="Your name"
           name="name"
           ref={nameRef}
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+          className="px-3 py-3 placeholder-purple text-gray-600 relative bg-white rounded text-sm border-0 w-1/2 shadow outline-none focus:outline-none focus:ring"
           required
         />
       </div>
@@ -53,7 +51,7 @@ export default function Contact() {
           placeholder="Email"
           name="email"
           ref={emailRef}
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+          className="px-3 py-3 placeholder-purple text-gray-600 relative bg-white rounded text-sm border-0 w-1/2 shadow outline-none focus:outline-none focus:ring "
           required
         />
       </div>
@@ -62,7 +60,7 @@ export default function Contact() {
           placeholder="Your message"
           name="message"
           ref={messageRef}
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+          className="px-3 py-3 placeholder-purple text-gray-600 relative bg-white rounded text-sm border-0 w-1/2 shadow outline-none focus:outline-none focus:ring"
           required
         />
       </div>

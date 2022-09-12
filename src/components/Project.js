@@ -7,10 +7,10 @@ import spacewalk from '../assets/spacewalk.png'
 
 export default function Project() {
   return (
-    <div>
-        <h2 className='text-white mb-10'>Featured Projects</h2>
+    <div className='flex flex-col items-center'>
+        <h2 className='text-purple mb-10'>Featured Projects</h2>
 
-        <div className='flex flex-col md:grid grid-cols-3 min-w-1/3 w-2/3'>
+        <div className='flex flex-col items-center md:grid grid-cols-3 min-w-1/3 w-2/3'>
             <div className='flip-card text-white text-sm p-2'>
               <div className='flip-card-inner'>
                 <div className='flip-card-front'>

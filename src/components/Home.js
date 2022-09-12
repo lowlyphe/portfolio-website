@@ -8,11 +8,11 @@ export default function () {
   return (
     <div className='w-full h-full p-16 '>
         
-      <div className='flex flex-col md:flex-row items-end space-x-4'>
+      <div className='flex flex-col'>
         <Intro/>
         <Technologies />
       </div>
-      <div className='my-16 text-3xl mx-auto0'>
+      <div className='my-16 text-3xl'>
         <Project />
       </div>
       <Contact />
