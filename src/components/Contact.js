@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import axios from 'axios'
 
 const API_URL = process.env.REACT_APP_API_URL
@@ -8,6 +8,11 @@ export default function Contact() {
     const nameRef = useRef();
     const emailRef = useRef();
     const messageRef = useRef()
+  
+    useEffect(() => {
+      axios.get(`${API_URL}/api/test`).then(res => console.log(res))
+    })
+
   const handleSubmit = (e) => {
     e.preventDefault()
     setTimeout(() => {

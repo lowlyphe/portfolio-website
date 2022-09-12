@@ -38,6 +38,10 @@ contactEmail.verify((error) => {
 });
 
 
+app.get('/api/test', (req,res) => {
+  res.status(200).header('text/plain').send('good')
+})
+
 app.post('/api/contact', (req,res) => {
   console.log(req.body)
   let { name, email, message } = req.body
