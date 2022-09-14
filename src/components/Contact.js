@@ -43,7 +43,7 @@ export default function Contact() {
           placeholder="Your name"
           name="name"
           ref={nameRef}
-          className="px-3 py-3 placeholder-purple text-gray-600 relative bg-white rounded text-sm border-0 w-1/2 shadow outline-none focus:outline-none focus:ring"
+          className="px-3 py-3 placeholder-purple text-gray-600 relative bg-white rounded text-sm border-0 w-full md:w-1/2 lg:w-1/3 shadow outline-none focus:outline-none focus:ring"
           required
         />
       </div>
@@ -53,7 +53,7 @@ export default function Contact() {
           placeholder="Email"
           name="email"
           ref={emailRef}
-          className="px-3 py-3 placeholder-purple text-gray-600 relative bg-white rounded text-sm border-0 w-1/2 shadow outline-none focus:outline-none focus:ring "
+          className="px-3 py-3 placeholder-purple text-gray-600 relative bg-white rounded text-sm border-0 w-full md:w-1/2 lg:w-1/3 shadow outline-none focus:outline-none focus:ring "
           required
         />
       </div>
@@ -62,7 +62,7 @@ export default function Contact() {
           placeholder="Your message"
           name="message"
           ref={messageRef}
-          className="px-3 py-3 placeholder-purple text-gray-600 relative bg-white rounded text-sm border-0 w-1/2 shadow outline-none focus:outline-none focus:ring"
+          className="px-3 py-3 placeholder-purple text-gray-600 relative bg-white rounded text-sm border-0 w-full md:w-1/2 lg:w-1/3 shadow outline-none focus:outline-none focus:ring"
           required
         />
       </div>
