@@ -18,7 +18,7 @@ export default function Technologies() {
 
   const urls = [javascript, node, react, psql, python, tailwind, jquery, mongodb, rest, phone]
   return (
-    <div className='text-3xl flex flex-col md:flex-row md:justify-start'>
+    <div className='text-2xl flex flex-col md:flex-row md:justify-start'>
         <p className='text-white'>
             I build applications with:&nbsp;
         </p>
