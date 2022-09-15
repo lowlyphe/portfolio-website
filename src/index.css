@@ -88,3 +88,7 @@ body {
   color: white;
   transform: rotateY(180deg);
 }
+
+.roatated {
+  transform: rotate(90deg);
+}

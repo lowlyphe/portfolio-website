@@ -3,6 +3,7 @@ import Intro from "./Intro";
 import Technologies from "./Technologies";
 import Project from './Project';
 import Contact from './Contact'
+import Images from './Images';
 
 export default function () {
   return (

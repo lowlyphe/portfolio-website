@@ -82,7 +82,7 @@ export default function Project() {
                 <div className='flip-card-back flex flex-col space-y-3 items-start'>
                   <h2>Space Walk - API Project</h2>              
                   <p className='text-left'>
-                    First website I built. Used to practice making API calls. FUnctionality centers around using the NASA APIs to display various information about space
+                    First website I built. Used to practice making API calls. Functionality centers around using the NASA APIs to display various information about space
                   </p>
                   <a href='https://github.com/lowlyphe/Space-Walk' alt='github' className='text-purple'>Github Repo</a>
                   <a href='https://spacewalk.surge.sh/solar-positions.html' alt='surge' className='text-purple'>Live URL</a>

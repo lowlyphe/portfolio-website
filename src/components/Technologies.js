@@ -11,12 +11,14 @@ import mongodb from '../assets/mongodb.svg'
 import rest from '../assets/rest.svg'
 import phone from '../assets/phone.svg'
 
-import Carousel from 'fade-carousel';
-
 
 export default function Technologies() {
 
   const urls = [javascript, node, react, psql, python, tailwind, jquery, mongodb, rest, phone]
+  const divStyle = {
+    height: '200px',
+    width: "100%",
+  }  
   return (
     <div className='text-2xl flex flex-col md:flex-row md:justify-start'>
         <p className='text-white'>
@@ -47,19 +49,6 @@ export default function Technologies() {
               1000,
 
             ]} />
-        {/* <Carousel delay={1500} mode={"fade"} className='ml-auto h-16'>
-        {urls.map((url, index) => (
-          <div key={index} >
-            <img
-              src={url}
-              style={{ width: "4rem", height: "auto" }}
-          
-            />
-          </div>
-        ))}
-      </Carousel> */}
-
-
     </div>
     
     
