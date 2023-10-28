@@ -14,11 +14,6 @@ import phone from '../assets/phone.svg'
 
 export default function Technologies() {
 
-  const urls = [javascript, node, react, psql, python, tailwind, jquery, mongodb, rest, phone]
-  const divStyle = {
-    height: '200px',
-    width: "100%",
-  }  
   return (
     <div className='text-2xl flex flex-col md:flex-row md:justify-start'>
         <p className='text-white'>
@@ -39,6 +34,8 @@ export default function Technologies() {
               1000,
               'jQuery',
               1000,
+              'Java',
+              1000,
               'RESTful APIs',
               1000,
               'NoSQL',
@@ -46,8 +43,7 @@ export default function Technologies() {
               'Responsive Layouts',
               1000,
               'You in mind',
-              1000,
-
+              1000
             ]} />
     </div>
     

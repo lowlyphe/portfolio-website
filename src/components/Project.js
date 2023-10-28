@@ -4,6 +4,7 @@ import kanban from '../assets/kanban.png'
 import n64 from '../assets/n64.png'
 import entertainment from '../assets/entertainment.png'
 import spacewalk from '../assets/spacewalk.png'
+import mapTools from '../assets/map-tools.png'
 
 export default function Project() {
   return (
@@ -86,6 +87,21 @@ export default function Project() {
                   </p>
                   <a href='https://github.com/lowlyphe/Space-Walk' alt='github' className='text-purple'>Github Repo</a>
                   <a href='https://spacewalk.surge.sh/solar-positions.html' alt='surge' className='text-purple'>Live URL</a>
+                </div>                
+              </div>
+            </div>
+
+            <div className='flip-card text-white text-sm p-2'>
+              <div className='flip-card-inner'>
+                <div className='flip-card-front'>
+                  <img src={mapTools} className='w-full h-full' alt='airbnb' />
+                </div>
+                <div className='flip-card-back flex flex-col space-y-3 items-start'>
+                  <h2>GIS Map Tools</h2>              
+                  <p className='text-left'>
+                    GIS Tools website that provides users with mapping tools letting them visualize AOIs and convert between AOI standards
+                  </p>
+                  <a href='https:/marianas-tools.surge.sh' alt='surge' className='text-purple'>Live URL</a>
                 </div>                
               </div>
             </div>
