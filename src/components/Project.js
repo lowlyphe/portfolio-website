@@ -101,7 +101,7 @@ export default function Project() {
                   <p className='text-left'>
                     GIS Tools website that provides users with mapping tools letting them visualize AOIs and convert between AOI standards
                   </p>
-                  <a href='https:/marianas-tools.surge.sh' alt='surge' className='text-purple'>Live URL</a>
+                  <a href='https://marianas-tools.surge.sh' alt='surge' className='text-purple'>Live URL</a>
                 </div>                
               </div>
             </div>
