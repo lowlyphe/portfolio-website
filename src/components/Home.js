@@ -1,7 +1,7 @@
 import React from 'react'
 import Intro from "./Intro";
 import Technologies from "./Technologies";
-import Project from './Project';
+import ProjectBox from './ProjectBox';
 import Contact from './Contact'
 import Images from './Images';
 
@@ -14,7 +14,7 @@ export default function () {
         <Technologies />
       </div>
       <div className='my-16 text-3xl'>
-        <Project />
+        <ProjectBox />
       </div>
       <Contact />
       
