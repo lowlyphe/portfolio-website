@@ -13,7 +13,6 @@ export default function getProjects() {
           header: "Airbnb Clone - Team Full Stack Application",
           textContent: "This full stack React application was meant to mimic the look and functionality of the Airbnb website. Technologies used include React, JS, Tailwind, RESTful APIs, Nodejs.",
           githubUrl: "https://github.com/mcsp-A-team/a-team-airbnb-clone",
-          liveUrl: "https://a-team-airbnb-clone-static.onrender.com/home"
         },
         {
           imgSrc: kanban,
@@ -32,7 +31,6 @@ export default function getProjects() {
           header: "Entertainment Web App",
           textContent: "Built as a dummy application to view a list of shows pulled from a database. Used to practice front end UI and UX using Tailwind",
           githubUrl: "https://github.com/lowlyphe/entertainment-web-app",
-          liveUrl: "https://entertainment-web-app-lowlyphe.herokuapp.com/"
         },
         {
           imgSrc: spacewalk,
