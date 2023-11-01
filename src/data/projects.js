@@ -47,9 +47,9 @@ export default function getProjects() {
         },
         {
             imgSrc: springboot,
-            header: "Spring Boot Server",
-            textContent: "Simple server with one RESTful endpoint for managing students stored in a Postgres database",
-            githubUrl: "https://github.com/lowlyphe/springboot-project"
+            header: "Academy Server",
+            textContent: "Simple server with two RESTful endpoints for managing students and faculty stored in a Postgres database",
+            githubUrl: "https://github.com/lowlyphe/academy-springboot-api"
           }
       ]
 }
